@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Nav />
       <Promo />
-      <Intro1 />
+      <Intro1 react="React developer!"/>
       <Intro2 />
       <Intro3 />
       <Footer />
