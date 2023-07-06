@@ -1,9 +1,13 @@
+
 function Intro2(props){
+    
     const design = {
         padding: "20px",
         border: "1px solid gray",
         background: "#fff",
-        margin: "20px 0"
+        margin: "20px 10px",
+        color: "tomato",
+        fontWeight: "bold"
     }
 
     return (
@@ -17,6 +21,7 @@ function Intro2(props){
                 <p className="link">Read more...</p>
             </div>
         </div>
+        
     );
 };
 

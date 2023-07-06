@@ -1,40 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
 import Intro2 from './components/Intro2';
 import Intro3 from './components/Intro3';
 import Footer from './components/Footer';
 import Nav from './components/Nav';
+import Btn from './components/Btn';
 import Promo from './components/Promo';
 import Intro1 from './components/Intro1';
+import React from './React.png';
+
+
+// function Logo(props){
+//   const image = <img src={React} />;
+//   return image;
+// }
+
+const data = {
+  heading : "Parent-child data flow",
+  component : "I will build more data flow"
+}
 
 function App() {
 
   return (
     
     <div className="App">
+      {/* <Logo /> */}
       <Nav />
-      <Promo />
+      <Btn />
+      <Promo heading = {data.heading} component = {data.component}/>
       <Intro1 react="React developer!"/>
       <Intro2 />
       <Intro3 />
       <Footer />
 
-       </div>
-       /*{ <header className="App-header">{ }
-   //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header> }*/
-    
+       </div>    
   );
 }
 
